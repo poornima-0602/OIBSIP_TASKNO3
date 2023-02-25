@@ -1,0 +1,90 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background-image: url("images.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator{
+  width: 25%;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: right;
+  box-shadow: 7px 7px 7px rgba(14, 61, 215, 0.5);
+}
+
+.display{
+  width: 100%;
+  height: 20vh;
+  background: rgb(146, 9, 220);
+  color: rgb(238, 137, 13);
+
+}
+
+.input{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button{
+  border:none;
+  background-color: rgb(13, 131, 240);
+  padding: 1.6rem;
+  font-size: 35px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+  font-weight: bold;
+}
+
+.output{
+  font-size: 28px;
+  padding: 25px;
+}
+
+.result{
+  font-size: 18px;
+  padding: 25px;
+}
+
+@keyframes big{
+  0%{
+      font-size: 18px;
+  }
+  100%{
+      font-size: 28px;
+  }
+}
+
+@keyframes small{
+  0%{
+      font-size: 28px;
+  }
+  100%{
+      font-size: 18px;
+  }
+}
+footer{
+  background: rgb(58, 8, 237);
+  padding: 30px 25px;
+  border-radius: 10pt;
+  
+  color: #eb0f0f77;
+  text-align:end;
+  font-family:'Arial';
+}
+footer span a{
+  color: rgba(6, 26, 70, 0.577);
+  text-decoration: none;
+}
+footer span a:hover{
+  color: rgb(116, 53, 56);
+}
